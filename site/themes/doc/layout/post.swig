@@ -10,7 +10,7 @@
 <body>
   <div class='menu'>
     <div class='logo'>
-      Documentation
+      EFOS WebAPI 
     </div>
     <nav class='menu-nav'>
       {% for section in site.data.nav %}
@@ -26,8 +26,8 @@
         </ul>
       {% endfor %}
     </nav>
-    <a class='footer' href='https://github.com/nodejh/hexo-documentation'>
-      Project on github
+    <a class='footer' href='https://www.eegrid.com'>
+      深圳市能效通网络有限公司
     </a>
   </div>
   <div class='page'>

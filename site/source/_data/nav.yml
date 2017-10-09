@@ -1,12 +1,40 @@
-- title: Introduction
+- title: 简介
   items:
-  - id: what-is-it
-    title: What is it?
-  - id: how-it-works
-    title: How it works
-- title: Usage
+  - id: intro
+    title: 简介
+- title: 初始化接口
   items:
-  - id: installation
-    title: Installation
-  - id: using
-    title: Using It
+  - id: project_auth
+    title: 项目权限
+  - id: project_alarmtype
+    title: 项目下所有告警类型
+  - id: project_devicetype
+    title: 项目下所有设备类型
+  - id: project_device
+    title: 项目下所有设备
+  - id: project_deviceparams
+    title: 项目下所有设备参数
+  - id: project_navparams
+    title: 返回项目所有房间与环境监测设备对应关系
+- title: 状态数据
+  items:
+  - id: state_alldev_realdata
+    title: 某项目所有设备当前实时数据
+  - id: state_dev_realdata
+    title: 某项目某设备当前实时数据
+  - id: state_alldev_historydata
+    title: 某项目某一时刻所有设备历史数据
+  - id: state_dev_historydata
+    title: 某项目某一时刻某设备历史数据
+  - id: state_dev_day_hourdata
+    title: 某项目某日某设备逐时数据
+  - id: state_alldev_datespan_historydata
+    title: 某项目某时间段所有设备历史数据
+- title: 告警数据
+  items:
+  - id: alarm_dataspan_data
+    title: 某项目当前设定周期内最新告警
+  - id: alarm_day_historydata
+    title: 某项目某日所有历史告警
+- title: 全局返回一览表
+- title: 附录

@@ -1,0 +1,61 @@
+---
+layout: default
+id: project_devicetype
+title: 项目下所有设备类型
+pre: project_alarmtype.html
+next: project_device.html
+---
+
+### 请求
+#### 地址
+> http://webapi.eegrid.com/devicetype/get?accessToken=ACCESSTOKEN
+
+#### 请求方法
+> POST
+
+#### Content-Type
+> application/x-www-form-urlencoded
+
+### 请求参数
+| 参数名称        | 说明           | 类型  |   是否必须  |
+| ------------- |:-------------:|:------:|-----:|
+| ProjectCode      | 项目编号 | String |  是   |
+
+### 返回参数
+| 参数名称        | 说明           | 类型  |
+| ------------- |:-------------:| -----:|
+| DeviceTypeID      | 设备类型编号 | String |
+| ParentCode      | 父级设备类型编号      | String |
+| DeviceTypeName      | 设备类型名称      | String |
+
+
+### 成功返回JSON示例
+```
+{
+    state：0,
+    ProjectCode:1,
+    data: [
+        {
+            DeviceTypeID:1,
+            ParentCode:null,
+            DeviceTypeName:高压开关柜
+        },
+        {
+            DeviceTypeID:2, 
+            ParentCode:1,
+            DevieceTypeName:高压进线柜
+        }
+    ]
+}
+
+```
+
+### 失败返回JSON示例 
+```
+{
+    "State": -1,
+    "ErrorMessage": "此处显示失败信息"
+}
+```
+
+
