@@ -9,8 +9,8 @@
 </head>
 <body>
   <div class='index'>
-    <a href="/what-is-it.html">
-      Get Start
+    <a href="/intro.html">
+      开始吧！
     </a>
   </div>
 </body>

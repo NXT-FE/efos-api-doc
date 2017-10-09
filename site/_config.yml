@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: EFOS-API DOC
 subtitle:
 description:
-author: John Doe
+author: pengkobe
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://NXT-FE.github.io/efos-api-doc  
+root: /efos-api-doc/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -77,4 +77,7 @@ theme: doc
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/NXT-FE/efos-api-doc
+  branch: gh-pages
+  message: "Docs updated: {{ now('YYYY-MM-DD HH:mm:ss') }})"
