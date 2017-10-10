@@ -9,8 +9,8 @@
 </head>
 <body>
   <div class='index'>
-    <a href="/intro.html">
-      开始吧！
+    <a href="/efos-api-doc/intro.html">
+      Get Start
     </a>
   </div>
 </body>

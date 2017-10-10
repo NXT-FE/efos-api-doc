@@ -36,5 +36,9 @@
     title: 某项目当前设定周期内最新告警
   - id: alarm_day_historydata
     title: 某项目某日所有历史告警
-- title: 全局返回一览表
-- title: 附录
+- title: 其它 
+  items:
+  - id: other_returncode
+    title: 全局返回一览表
+  - id: other_ps
+    title: 附录
