@@ -10,7 +10,7 @@ next: project_alarmtype.html
 > http://webapi.eegrid.com/project/get?AccessToken=ACCESSTOKEN
 
 #### 请求方法
-POST
+> POST
 
 ### 返回参数
 | 参数名称        | 说明           | 类型  |

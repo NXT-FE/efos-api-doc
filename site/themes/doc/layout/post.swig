@@ -26,9 +26,7 @@
         </ul>
       {% endfor %}
     </nav>
-    <a class='footer' href='http://www.eegrid.com'>
-      深圳市能效通网络有限公司
-    </a>
+   
   </div>
   <div class='page'>
     <div class='page-content'>
@@ -40,6 +38,11 @@
     {% if page.prev %}
       <a class='previous' href='{{ url_for(page.prev) }}'>上一节</a>
     {% endif %}
+
+    <a class='footer' href='http://www.eegrid.com'>
+      深圳市能效通网络有限公司
+    </a>
+
     {% if page.next %}
       <a class='next' href='{{ url_for(page.next) }}'>下一节</a>
     {% endif %}

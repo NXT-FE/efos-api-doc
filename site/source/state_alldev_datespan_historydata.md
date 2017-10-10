@@ -2,7 +2,7 @@
 layout: default
 id: state_alldev_datespan_historydata
 title: 某项目某时间段所有设备历史数据
-pre: state_dev_day_hourdata.html
+prev: state_dev_day_hourdata.html
 next: alarm_dataspan_data.html
 ---
 

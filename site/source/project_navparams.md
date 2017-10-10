@@ -2,7 +2,7 @@
 layout: default
 id: project_navparams
 title: 返回项目所有房间与环境监测设备对应关系
-pre: project_deviceparams.html
+prev: project_deviceparams.html
 next: state_alldev_realdata.html
 ---
 

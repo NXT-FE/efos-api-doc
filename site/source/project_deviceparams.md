@@ -2,7 +2,7 @@
 layout: default
 id: project_deviceparams
 title: 项目下所有设备参数
-pre: project_device.html
+prev: project_device.html
 next: project_navparams.html
 ---
 

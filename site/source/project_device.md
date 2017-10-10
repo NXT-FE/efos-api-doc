@@ -2,8 +2,8 @@
 layout: default
 id: project_device
 title: 项目下所有设备
-pre: project_devicetype.html
-next: project_params.html
+prev: project_devicetype.html
+next: project_deviceparams.html
 ---
 
 ### 请求

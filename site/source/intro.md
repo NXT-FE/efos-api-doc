@@ -2,12 +2,20 @@
 layout: default
 id: intro
 title: 简介
-prev: intro.html
+next: project_auth.html
 ---
 
 **当前版本:1.5.3** 
-请联系客服获取 Token
+各集团用户请联系客服获取 Token
 
-### 修正项
+## 修正项
+
+### 1.5.3
+* 新增 **项目下所有告警类型** 接口
+* 项目下所有设备 接口新增 **NavCode(导航编码)** 字段
+* 项目下所有设备 接口新增 **TypeID(设备类型编号)** 字段
+
 
 #### 1.5.2
+* 请求字段与返回字段首字母统一改为大写字母
+* 去除返回参数中冗余的 ProjectCode 字段

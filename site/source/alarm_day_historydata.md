@@ -2,7 +2,8 @@
 layout: default
 id: alarm_day_historydata
 title: 某项目某日所有历史告警
-pre: alarm_dataspan_data.html
+prev: alarm_dataspan_data.html
+next: other_returncode.html
 ---
 
 ### 请求

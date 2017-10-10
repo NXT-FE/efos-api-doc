@@ -2,7 +2,7 @@
 layout: default
 id: oter_returncode
 title: 全局返回一览表
-pre: state_alldev_datespan_historydata.html
+prev: alarm_day_historydata.html
 next: other_ps.html
 ---
 

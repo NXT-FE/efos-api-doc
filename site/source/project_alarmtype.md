@@ -2,7 +2,7 @@
 layout: default
 id: project_alarmtype
 title: 项目下所有告警类型
-pre: project_auth.html
+prev: project_auth.html
 next: project_devicetype.html
 ---
 

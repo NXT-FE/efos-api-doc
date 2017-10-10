@@ -2,7 +2,7 @@
 layout: default
 id: state_dev_day_hourdata
 title: 某项目某日某设备逐时数据
-pre: state_dev_historydata.html
+prev: state_dev_historydata.html
 next: state_alldev_datespan_historydata.html
 ---
 

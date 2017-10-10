@@ -2,7 +2,7 @@
 layout: default
 id: project_devicetype
 title: 项目下所有设备类型
-pre: project_alarmtype.html
+prev: project_alarmtype.html
 next: project_device.html
 ---
 

@@ -2,7 +2,7 @@
 layout: default
 id: alarm_dataspan_data
 title: 某项目当前设定周期内最新告警
-pre: state_alldev_datespan_historydata.html
+prev: state_alldev_datespan_historydata.html
 next: alarm_day_historydata.html
 ---
 

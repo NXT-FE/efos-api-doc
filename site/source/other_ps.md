@@ -2,7 +2,8 @@
 layout: default
 id: other_ps
 title: 附录
-pre: oter_returncode.html
+prev: oter_returncode.html
+next: efos_h5_page.html
 ---
 
 建议使用 postman 作为接口测试工具  
