@@ -57,7 +57,7 @@
         </ul>
       
         <ul class='nav'>
-          <span>状态数据</span>
+          <span>实时/历史数据</span>
           <ul class='nav'>
             
               <li>
@@ -88,6 +88,21 @@
         </ul>
       
         <ul class='nav'>
+          <span>能耗数据(暂未开放)</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/energy_alldev_daydata.html'>某项目所有设备某日能耗</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/energy_dev_hourdata.html'>某项目某设备某日逐时能耗</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
           <span>告警数据</span>
           <ul class='nav'>
             
@@ -103,35 +118,53 @@
         </ul>
       
         <ul class='nav'>
-          <span>全局返回一览表</span>
+          <span>其它</span>
           <ul class='nav'>
             
-          </ul>
-        </ul>
-      
-        <ul class='nav'>
-          <span>附录</span>
-          <ul class='nav'>
+              <li>
+                <a href='/efos-api-doc/other_returncode.html'>全局返回一览表</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/other_ps.html'>附录</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/efos_h5_page.html'>EFOS H5接口说明</a>
+              </li>
             
           </ul>
         </ul>
       
     </nav>
-    <a class='footer' href='https://www.eegrid.com'>
-      深圳市能效通网络有限公司
-    </a>
+   
   </div>
   <div class='page'>
     <div class='page-content'>
       <h1>简介</h1>
-      <p><strong>当前版本:1.5.3</strong><br>请联系客服获取 Token</p>
+      <p><strong>当前版本:1.5.3</strong><br>各集团用户请联系客服获取 <strong>AccessToken</strong></p>
+<h2 id="修正项"><a href="#修正项" class="headerlink" title="修正项"></a>修正项</h2><h3 id="1-5-3"><a href="#1-5-3" class="headerlink" title="1.5.3"></a>1.5.3</h3><ul>
+<li>新增 <strong>项目下所有告警类型</strong> 接口</li>
+<li>新增 <strong>项目下所有设备类型</strong> 接口</li>
+<li>项目下所有设备 接口新增 <strong>NavCode(导航编码)</strong> 字段</li>
+<li>项目下所有设备 接口新增 <strong>TypeID(设备类型编号)</strong> 字段</li>
+</ul>
+<h4 id="1-5-2"><a href="#1-5-2" class="headerlink" title="1.5.2"></a>1.5.2</h4><ul>
+<li>请求字段与返回字段首字母统一改为大写字母</li>
+<li>去除返回参数中冗余的 ProjectCode 字段</li>
+</ul>
 
     </div>
   </div>
   <div class='switch-page'>
     
-      <a class='previous' href='/efos-api-doc/intro.html'>Previous</a>
+
+    <a class='footer' href='http://www.eegrid.com'>
+      深圳市能效通网络有限公司
+    </a>
+
     
+      <a class='next' href='/efos-api-doc/project_auth.html'>下一节</a>
     
   </div>
 </body>

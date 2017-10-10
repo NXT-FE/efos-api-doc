@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charSet='utf-8' />
-  <title>EFOS-API DOC - 项目下所有设备类型</title>
+  <title>EFOS-API DOC - 某项目某一时刻所有设备历史数据</title>
   <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
   <link href='/efos-api-doc/css/docs.css' rel='stylesheet'>
@@ -38,7 +38,7 @@
               </li>
             
               <li>
-                <a href='/efos-api-doc/project_devicetype.html' class='active'>项目下所有设备类型</a>
+                <a href='/efos-api-doc/project_devicetype.html'>项目下所有设备类型</a>
               </li>
             
               <li>
@@ -69,7 +69,7 @@
               </li>
             
               <li>
-                <a href='/efos-api-doc/state_alldev_historydata.html'>某项目某一时刻所有设备历史数据</a>
+                <a href='/efos-api-doc/state_alldev_historydata.html' class='active'>某项目某一时刻所有设备历史数据</a>
               </li>
             
               <li>
@@ -141,9 +141,9 @@
   </div>
   <div class='page'>
     <div class='page-content'>
-      <h1>项目下所有设备类型</h1>
+      <h1>某项目某一时刻所有设备历史数据</h1>
       <h3 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h3><h4 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h4><blockquote>
-<p><a href="http://webapi.eegrid.com/devicetype/get?accessToken=ACCESSTOKEN" target="_blank" rel="external">http://webapi.eegrid.com/devicetype/get?accessToken=ACCESSTOKEN</a></p>
+<p><a href="http://webapi.eegrid.com/historydata/get?AccessToken=ACCESSTOKEN" target="_blank" rel="external">http://webapi.eegrid.com/historydata/get?AccessToken=ACCESSTOKEN</a></p>
 </blockquote>
 <h4 id="请求方法"><a href="#请求方法" class="headerlink" title="请求方法"></a>请求方法</h4><blockquote>
 <p>POST</p>
@@ -167,6 +167,12 @@
 <td style="text-align:center">String</td>
 <td style="text-align:right">是</td>
 </tr>
+<tr>
+<td>Date</td>
+<td style="text-align:center">时刻，如(2016-1-12 10:00)</td>
+<td style="text-align:center">String</td>
+<td style="text-align:right">否，默认当前时刻</td>
+</tr>
 </tbody>
 </table>
 <h3 id="返回参数"><a href="#返回参数" class="headerlink" title="返回参数"></a>返回参数</h3><table>
@@ -179,30 +185,38 @@
 </thead>
 <tbody>
 <tr>
-<td>DeviceTypeID</td>
-<td style="text-align:center">设备类型编号</td>
+<td>DeviceID</td>
+<td style="text-align:center">设备编号</td>
 <td style="text-align:right">String</td>
 </tr>
 <tr>
-<td>ParentCode</td>
-<td style="text-align:center">父级设备类型编号</td>
+<td>DataCode</td>
+<td style="text-align:center">参数编号</td>
 <td style="text-align:right">String</td>
 </tr>
 <tr>
-<td>DeviceTypeName</td>
-<td style="text-align:center">设备类型名称</td>
+<td>CollectTime</td>
+<td style="text-align:center">采集时间</td>
+<td style="text-align:right">String</td>
+</tr>
+<tr>
+<td>CollectData</td>
+<td style="text-align:center">参数值</td>
 <td style="text-align:right">String</td>
 </tr>
 </tbody>
 </table>
-<h3 id="成功返回JSON示例"><a href="#成功返回JSON示例" class="headerlink" title="成功返回JSON示例"></a>成功返回JSON示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    state：0,</div><div class="line">    ProjectCode:1,</div><div class="line">    data: [</div><div class="line">        &#123;</div><div class="line">            DeviceTypeID:1,</div><div class="line">            ParentCode:null,</div><div class="line">            DeviceTypeName:高压开关柜</div><div class="line">        &#125;,</div><div class="line">        &#123;</div><div class="line">            DeviceTypeID:2, </div><div class="line">            ParentCode:1,</div><div class="line">            DevieceTypeName:高压进线柜</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>注：返回离该时刻最近有数据时刻的数据</p>
+</blockquote>
+<h3 id="成功返回JSON示例"><a href="#成功返回JSON示例" class="headerlink" title="成功返回JSON示例"></a>成功返回JSON示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;State&quot;：0,</div><div class="line">    &quot;ProjectCode&quot;:&quot;1&quot;,</div><div class="line">    &quot;Data&quot;:[&#123;</div><div class="line">            &quot;DeviceID&quot;:1,</div><div class="line">            &quot;DataCode&quot;:&quot;1&quot;,</div><div class="line">            &quot;CollectTime&quot;:&quot; 2016-01-12 05:00&quot;,</div><div class="line">            &quot;CollectData&quot;:&quot;4702&quot;</div><div class="line">        &#125;,</div><div class="line">        &#123;</div><div class="line">            &quot;DeviceID&quot;:2,</div><div class="line">            &quot;DataCode&quot;:&quot;1&quot;,</div><div class="line">            &quot;CollectTime&quot;:&quot; 2016-01-12 05:00&quot;,</div><div class="line">            &quot;CollectData&quot;:&quot;472&quot;</div><div class="line">        &#125;,</div><div class="line">    …</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="失败返回JSON示例"><a href="#失败返回JSON示例" class="headerlink" title="失败返回JSON示例"></a>失败返回JSON示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;State&quot;: -1,</div><div class="line">    &quot;ErrorMessage&quot;: &quot;此处显示失败信息&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
     </div>
   </div>
   <div class='switch-page'>
     
-      <a class='previous' href='/efos-api-doc/project_alarmtype.html'>上一节</a>
+      <a class='previous' href='/efos-api-doc/state_dev_realdata.html'>上一节</a>
     
 
     <a class='footer' href='http://www.eegrid.com'>
@@ -210,7 +224,7 @@
     </a>
 
     
-      <a class='next' href='/efos-api-doc/project_device.html'>下一节</a>
+      <a class='next' href='/efos-api-doc/state_dev_historydata.html'>下一节</a>
     
   </div>
 </body>
