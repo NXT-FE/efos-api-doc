@@ -1,14 +1,14 @@
 ---
 layout: default
-id: state_alldev_datespan_historydata
-title: 某项目某时间段所有设备历史数据
-prev: state_dev_day_hourdata.html
-next: energy_alldev_daydata.html
+id: energy_dev_hourdata
+title: 某项目某设备某日逐时能耗
+prev: energy_alldev_daydata.html
+next: alarm_dataspan_data.html
 ---
 
 ### 请求
 #### 地址
-> http://webapi.eegrid.com/historydataspan/get?AccessToken=ACCESSTOKEN
+> http://webapi.eegrid.com/energy/get?accessToken=ACCESSTOKEN
 
 #### 请求方法
 > POST
@@ -20,42 +20,37 @@ next: energy_alldev_daydata.html
 | 参数名称        | 说明           | 类型  |   是否必须  |
 | ------------- |:-------------:|:------:|-----:|
 | ProjectCode      | 项目编号 | String |  是   |
-| StartTime      | 开始时间( 2016-12-12 10:22  ) | String |  是   |
-| EndTime      | 结束时间(2016-12-12  22:22  ) | String |  是   |
+| DeviceID      | 设备编号 | String |  是   |
+| Date      | 日期，如(2016-1-12 00:00) | String |  否，默认当天   |
 
 ### 返回参数
 | 参数名称        | 说明           | 类型  |
 | ------------- |:-------------:| -----:|
 | DeviceID      | 设备编号 | String |
-| DataCode        | 参数编号 | String |
 | CollectTime      | 采集时间      | String |
-| CollectData      | 参数值 | String |
+| CollectData      | 参数值 | String（单位:kwh） |
 
 > 注：请求不可跨天( StartTime \ EndTime 必须为同一天 )，每日请求数据次数限制为 5 次
 
 ### 成功返回JSON示例
 ```
 {
-    State：0,
-    ProjectCode:1,
-    Data: [
+    "state":"0",
+    "projectCode":"1",
+    "data":[
         {
-            NavCode:1,
-            NavName:变压器房（主楼-2f）,
-            ParamName:室温,
-            DeviceID:4,
-            DataCode:31
+            "deviceID":"1",
+            "CollectTime":"2016-01-29 00:00",
+            "CollectData":" "32",
         },
         {
-            NavCode:2,
-            NavName:1#配电房（主楼-2F）,
-            ParamName:室温,
-            DeviceID:15,
-            DataCode:32
+            "deviceID":"1",
+            "CollectTime":"2016-01-29 01:00",
+            "CollectData":" 98",
         }
+        …
     ]
 }
-
 
 ```
 

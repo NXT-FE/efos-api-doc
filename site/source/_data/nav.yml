@@ -16,7 +16,7 @@
     title: 项目下所有设备参数
   - id: project_navparams
     title: 返回项目所有房间与环境监测设备对应关系
-- title: 状态数据
+- title: 实时/历史数据
   items:
   - id: state_alldev_realdata
     title: 某项目所有设备当前实时数据
@@ -30,12 +30,19 @@
     title: 某项目某日某设备逐时数据
   - id: state_alldev_datespan_historydata
     title: 某项目某时间段所有设备历史数据
+- title: 能耗数据(暂未开放)
+  items:
+  - id: energy_alldev_daydata
+    title: 某项目所有设备某日能耗
+  - id: energy_dev_hourdata
+    title: 某项目某设备某日逐时能耗
 - title: 告警数据
   items:
   - id: alarm_dataspan_data
     title: 某项目当前设定周期内最新告警
   - id: alarm_day_historydata
     title: 某项目某日所有历史告警
+
 - title: 其它 
   items:
   - id: other_returncode
