@@ -2,7 +2,7 @@
 layout: default
 id: state_alldev_realdata
 title: 某项目所有设备当前实时数据
-prev: project_navparams.html
+prev: project_alarmconfig.html
 next: state_dev_realdata.html
 ---
 

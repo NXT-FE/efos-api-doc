@@ -15,7 +15,11 @@
   - id: project_deviceparams
     title: 项目下所有设备参数
   - id: project_navparams
-    title: 返回项目所有房间与环境监测设备对应关系
+    title: 项目房间(导航)与环境监测设备
+  - id: project_device_datacode
+    title: 设备采集参数
+  - id: project_alarmconfig
+    title: 告警条件配置
 - title: 实时/历史数据
   items:
   - id: state_alldev_realdata
