@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charSet='utf-8' />
+  <title>EFOS-API DOC - Hello World</title>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+  <link href='/efos-api-doc/1.5.3/css/docs.css' rel='stylesheet'>
+</head>
+<body>
+  <div class='menu'>
+    <div class='logo'>
+      EFOS WebAPI 
+    </div>
+    <nav class='menu-nav'>
+      
+        <ul class='nav'>
+          <span>简介</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/intro.html'>简介</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>初始化接口</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_auth.html'>项目权限</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_alarmtype.html'>项目下所有告警类型</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_devicetype.html'>项目下所有设备类型</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_device.html'>项目下所有设备</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_deviceparams.html'>项目下所有设备参数</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_navparams.html'>返回项目所有房间与环境监测设备对应关系</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>实时/历史数据</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_alldev_realdata.html'>某项目所有设备当前实时数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_dev_realdata.html'>某项目某设备当前实时数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_alldev_historydata.html'>某项目某一时刻所有设备历史数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_dev_historydata.html'>某项目某一时刻某设备历史数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_dev_day_hourdata.html'>某项目某日某设备逐时数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_alldev_datespan_historydata.html'>某项目某时间段所有设备历史数据</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>能耗数据(暂未开放)</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/energy_alldev_daydata.html'>某项目所有设备某日能耗</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/energy_dev_hourdata.html'>某项目某设备某日逐时能耗</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>告警数据</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/alarm_dataspan_data.html'>某项目当前设定周期内最新告警</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/alarm_day_historydata.html'>某项目某日所有历史告警</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>其它</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/other_returncode.html'>全局返回一览表</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/other_ps.html'>附录</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/efos_h5_page.html'>EFOS H5接口说明</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+    </nav>
+   
+  </div>
+  <div class='page'>
+    <div class='page-content'>
+      <h1>Hello World</h1>
+      <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+    </div>
+  </div>
+  <div class='switch-page'>
+    
+
+    <a class='footer' href='http://www.eegrid.com'>
+      深圳市能效通网络有限公司
+    </a>
+
+    
+  </div>
+</body>
+</html>

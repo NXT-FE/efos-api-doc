@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charSet='utf-8' />
+  <title>EFOS-API DOC - 简介</title>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+  <link href='/efos-api-doc/1.5.3/css/docs.css' rel='stylesheet'>
+</head>
+<body>
+  <div class='menu'>
+    <div class='logo'>
+      EFOS WebAPI 
+    </div>
+    <nav class='menu-nav'>
+      
+        <ul class='nav'>
+          <span>简介</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/intro.html' class='active'>简介</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>初始化接口</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_auth.html'>项目权限</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_alarmtype.html'>项目下所有告警类型</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_devicetype.html'>项目下所有设备类型</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_device.html'>项目下所有设备</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_deviceparams.html'>项目下所有设备参数</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/project_navparams.html'>返回项目所有房间与环境监测设备对应关系</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>实时/历史数据</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_alldev_realdata.html'>某项目所有设备当前实时数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_dev_realdata.html'>某项目某设备当前实时数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_alldev_historydata.html'>某项目某一时刻所有设备历史数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_dev_historydata.html'>某项目某一时刻某设备历史数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_dev_day_hourdata.html'>某项目某日某设备逐时数据</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/state_alldev_datespan_historydata.html'>某项目某时间段所有设备历史数据</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>能耗数据(暂未开放)</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/energy_alldev_daydata.html'>某项目所有设备某日能耗</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/energy_dev_hourdata.html'>某项目某设备某日逐时能耗</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>告警数据</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/alarm_dataspan_data.html'>某项目当前设定周期内最新告警</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/alarm_day_historydata.html'>某项目某日所有历史告警</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+        <ul class='nav'>
+          <span>其它</span>
+          <ul class='nav'>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/other_returncode.html'>全局返回一览表</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/other_ps.html'>附录</a>
+              </li>
+            
+              <li>
+                <a href='/efos-api-doc/1.5.3/efos_h5_page.html'>EFOS H5接口说明</a>
+              </li>
+            
+          </ul>
+        </ul>
+      
+    </nav>
+   
+  </div>
+  <div class='page'>
+    <div class='page-content'>
+      <h1>简介</h1>
+      <p><strong>当前版本:1.5.3</strong><br>各集团用户请联系客服获取 <strong>AccessToken</strong></p>
+<h2 id="修正项"><a href="#修正项" class="headerlink" title="修正项"></a>修正项</h2><h3 id="1-5-3"><a href="#1-5-3" class="headerlink" title="1.5.3"></a>1.5.3</h3><ul>
+<li>新增 <strong>项目下所有告警类型</strong> 接口</li>
+<li>新增 <strong>项目下所有设备类型</strong> 接口</li>
+<li>项目下所有设备 接口新增 <strong>NavCode(导航编码)</strong> 字段</li>
+<li>项目下所有设备 接口新增 <strong>TypeID(设备类型编号)</strong> 字段</li>
+</ul>
+<h4 id="1-5-2"><a href="#1-5-2" class="headerlink" title="1.5.2"></a>1.5.2</h4><ul>
+<li>请求字段与返回字段首字母统一改为大写字母</li>
+<li>去除返回参数中冗余的 ProjectCode 字段</li>
+</ul>
+
+    </div>
+  </div>
+  <div class='switch-page'>
+    
+
+    <a class='footer' href='http://www.eegrid.com'>
+      深圳市能效通网络有限公司
+    </a>
+
+    
+      <a class='next' href='/efos-api-doc/1.5.3/project_auth.html'>下一节</a>
+    
+  </div>
+</body>
+</html>
