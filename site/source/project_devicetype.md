@@ -32,18 +32,18 @@ next: project_device.html
 ### 成功返回JSON示例
 ```
 {
-    state：0,
-    ProjectCode:1,
-    data: [
+    "state"：0,
+    "ProjectCode":1,
+    "data": [
         {
-            DeviceTypeID:1,
-            ParentCode:null,
-            DeviceTypeName:高压开关柜
+            "DeviceTypeID":1,
+            "ParentCode":null,
+            "DeviceTypeName":"高压开关柜"
         },
         {
-            DeviceTypeID:2, 
-            ParentCode:1,
-            DevieceTypeName:高压进线柜
+            "DeviceTypeID":2, 
+            "ParentCode":1,
+            "DevieceTypeName":"高压进线柜"
         }
     ]
 }

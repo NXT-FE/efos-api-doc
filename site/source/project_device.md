@@ -34,22 +34,22 @@ next: project_deviceparams.html
 ### 成功返回JSON示例
 ```
 {
-    State：0,
-    ProjectCode:1,
-    Data: [
+    "State"：0,
+    "ProjectCode":1,
+    "Data": [
         {
-            TypeID:1,
-            TypeName:变压器
-            NavName:配电房,
-            DeviceID:1,
-            DeviceName:1#变压器
+            "TypeID":1,
+            "TypeName":"变压器"
+            "NavName":"配电房",
+            "DeviceID":1,
+            "DeviceName":"1#变压器"
         },
         {
-            TypeID:2,
-            TypeName:进线柜, 
-            NavName: 配电房,
-            DeviceID:2,		
-            DeviceName:1#进线柜
+            "TypeID":2,
+            "TypeName":"进线柜", 
+            "NavName": "配电房",
+            "DeviceID":2,		
+            "DeviceName":"1#进线柜"
         }
     ]
 }

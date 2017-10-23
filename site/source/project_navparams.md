@@ -33,22 +33,22 @@ next: project_device_datacode.html
 ### 成功返回JSON示例
 ```
 {
-    State：0,
-    ProjectCode:1,
-    Data: [
+    "State"：0,
+    "ProjectCode":1,
+    "Data": [
         {
-            NavCode:1,
-            NavName:变压器房（主楼-2f）,
-            ParamName:室温,
-            DeviceID:4,
-            DataCode:31
+            "NavCode":1,
+            "NavName":"变压器房（主楼-2f）",
+            "ParamName":"室温",
+            "DeviceID":4,
+            "DataCode":31
         },
         {
-            NavCode:2,
-            NavName:1#配电房（主楼-2F）,
-            ParamName:室温,
-            DeviceID:15,
-            DataCode:32
+            "NavCode":2,
+            "NavName":"1#配电房（主楼-2F）",
+            "ParamName":"室温",
+            "DeviceID"15,
+            "DataCode":32
         }
     ]
 }

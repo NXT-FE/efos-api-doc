@@ -26,21 +26,24 @@ next: project_navparams.html
 | ------------- |:-------------:| -----:|
 | DataCode      | 参数编号 | String |
 | DataName      | 参数名称      | String |
+| Unit      | 单位      | String |
 
 
 ### 成功返回JSON示例
 ```
 {
-    State：0,
-    ProjectCode:1,
-    Data: [
+    "State"：0,
+    "ProjectCode":1,
+    "Data": [
         {
-            DataCode:1,
-            DataName:参数1
+            "DataCode":1,
+            "DataName":"电压",
+            "Unit":"V"
         },
         {
-            DataCode:2,
-            DataName:参数2
+            "DataCode":2,
+            "DataName":"电流",
+            "Unit":"A"
         }
     ]
 }
