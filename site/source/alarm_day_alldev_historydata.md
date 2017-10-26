@@ -1,14 +1,14 @@
 ---
 layout: default
-id: alarm_day_historydata
-title: 某日某项目某设备所有历史告警
-prev: alarm_dataspan_data.html
-next: alarm_day_alldev_historydata.html
+id: alarm_day_alldev_historydata
+title: 某日某项目所有历史告警
+prev: alarm_day_historydata.html
+next: other_returncode.html
 ---
 
 ### 请求
 #### 地址
-> http://webapi.eegrid.com/alarm/get?AccessToken=ACCESSTOKEN
+> http://webapi.eegrid.com/alarm/alldev/get?AccessToken=ACCESSTOKEN
 
 #### 请求方法
 > POST
@@ -20,7 +20,6 @@ next: alarm_day_alldev_historydata.html
 | 参数名称        | 说明           | 类型  |   是否必须  |
 | ------------- |:-------------:|:------:|-----:|
 | ProjectCode      | 项目编号 | String |  是   |
-| DeviceID      | 设备编号 | String |  是   |
 | Date      | 时刻，如(2016-1-12 10:00) | String |  否，默认当天   |
 
 
@@ -53,7 +52,7 @@ next: alarm_day_alldev_historydata.html
             "AlarmInfo":"变压器温度过高"
         },
         {
-            "DeviceID": "1",
+            "DeviceID": "73",
             "DataCode": "41",
             "CollectData": "2099",
             "AlarmID":"23",

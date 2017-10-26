@@ -45,7 +45,9 @@
   - id: alarm_dataspan_data
     title: 某项目当前设定周期内最新告警
   - id: alarm_day_historydata
-    title: 某项目某日所有历史告警
+    title: 某日某项目某设备所有历史告警
+  - id: alarm_day_alldev_historydata
+    title: 某日某项目所有历史告警
 
 - title: 其它 
   items:
