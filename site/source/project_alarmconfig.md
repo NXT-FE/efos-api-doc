@@ -50,21 +50,24 @@ next: state_alldev_realdata.html
             "DeviceName": "1#进线1",
             "DataCode": 1,
             "DataName": "运行状态",
-            "Expression": "1_1==0"
+            "Expression": "1_1==0",  
+            "AlarmLevel": "1"
         },
         {
             "DeviceID": 1,
             "DeviceName": "1#进线1",
             "DataCode": 46,
             "DataName": "C相电压",
-            "Expression": "1_46>418"
+            "Expression": "1_46>418",
+            "AlarmLevel": "2"
         },
         {
             "DeviceID": 43,
             "DeviceName": "入口道闸",
             "DataCode": 1,
             "DataName": "运行状态",
-            "Expression": "43_1==0||43_2==1"
+            "Expression": "43_1==0||43_2==1",
+            "AlarmLevel": "3"
         },
     ]
 }
