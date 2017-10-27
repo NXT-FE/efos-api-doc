@@ -29,6 +29,8 @@ next: state_alldev_realdata.html
 | DataCode      | 数据标识编号     | String |
 | DataName      | 数据标识名称      | String |
 | Expression      | 表达式      | String |
+| AlarmLevel      | 告警级别(共3个级别，1:事件;2:一般告警;3:严重告警)   | String |
+
 
 #### Expression 高级示例
 * 或，**43_1==0||43_2==1** 可以译为 
