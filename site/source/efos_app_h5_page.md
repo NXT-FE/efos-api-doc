@@ -1,7 +1,7 @@
 ---
 layout: default
-id: efos_h5_page
-title: EFOS H5 接口说明
+id: efos_app_h5_page
+title: EFOS APP H5 接口说明
 prev: other_ps.html
 ---
 

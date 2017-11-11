@@ -55,5 +55,7 @@
     title: 全局返回一览表
   - id: other_ps
     title: 附录
-  - id: efos_h5_page
-    title: EFOS H5接口说明
+  - id: efos_app_h5_page
+    title: EFOS APP H5接口说明
+  - id: efos_pc_h5_page
+    title: EFOS PC H5接口说明
