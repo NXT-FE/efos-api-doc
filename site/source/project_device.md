@@ -28,6 +28,7 @@ next: project_deviceparams.html
 | TypeName      | 设备类型      | String |
 | NavName      | 位置      | String |
 | DeviceID      | 设备编号      | String |
+| DeviceCode      | 客户设备标准编码      | String |
 | DeviceName      | 设备名称      | String |
 
 
@@ -41,6 +42,7 @@ next: project_deviceparams.html
             "TypeID":1,
             "TypeName":"变压器"
             "NavName":"配电房",
+            "DeviceCode":"WD-SW-1023",
             "DeviceID":1,
             "DeviceName":"1#变压器"
         },
@@ -48,6 +50,7 @@ next: project_deviceparams.html
             "TypeID":2,
             "TypeName":"进线柜", 
             "NavName": "配电房",
+            "DeviceCode":"WD-SW-1024",
             "DeviceID":2,		
             "DeviceName":"1#进线柜"
         }
