@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charSet='utf-8' />
-  <title>EFOS-API DOC - 设备采集参数</title>
+  <title>EFOS-API DOC - EFOS PC H5 接口说明</title>
   <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
   <link href='/efos-api-doc/css/docs.css' rel='stylesheet'>
@@ -54,7 +54,7 @@
               </li>
             
               <li>
-                <a href='/efos-api-doc/project_device_datacode.html' class='active'>设备采集参数</a>
+                <a href='/efos-api-doc/project_device_datacode.html'>设备采集参数</a>
               </li>
             
               <li>
@@ -146,7 +146,7 @@
               </li>
             
               <li>
-                <a href='/efos-api-doc/efos_pc_h5_page.html'>EFOS PC H5接口说明</a>
+                <a href='/efos-api-doc/efos_pc_h5_page.html' class='active'>EFOS PC H5接口说明</a>
               </li>
             
           </ul>
@@ -157,17 +157,14 @@
   </div>
   <div class='page'>
     <div class='page-content'>
-      <h1>设备采集参数</h1>
+      <h1>EFOS PC H5 接口说明</h1>
       <h3 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h3><h4 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h4><blockquote>
-<p><a href="http://webapi.eegrid.com/datamapping/get?accessToken=ACCESSTOKEN" target="_blank" rel="external">http://webapi.eegrid.com/datamapping/get?accessToken=ACCESSTOKEN</a></p>
+<p><a href="http://master.eegrid.com/PublishPage.aspx?projectCode=ProjectCode&amp;funCode=FuncCode&amp;accesstoken=ACCESSTOKEN" target="_blank" rel="external">http://master.eegrid.com/PublishPage.aspx?projectCode=ProjectCode&amp;funCode=FuncCode&amp;accesstoken=ACCESSTOKEN</a></p>
 </blockquote>
 <h4 id="请求方法"><a href="#请求方法" class="headerlink" title="请求方法"></a>请求方法</h4><blockquote>
-<p>POST</p>
+<p>GET</p>
 </blockquote>
-<h4 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h4><blockquote>
-<p>application/x-www-form-urlencoded</p>
-</blockquote>
-<h3 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h3><table>
+<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><table>
 <thead>
 <tr>
 <th>参数名称</th>
@@ -178,60 +175,40 @@
 </thead>
 <tbody>
 <tr>
-<td>ProjectCode</td>
+<td>accesstoken</td>
+<td style="text-align:center">请求票据</td>
+<td style="text-align:center">String</td>
+<td style="text-align:right">是</td>
+</tr>
+<tr>
+<td>projectcode</td>
 <td style="text-align:center">项目编号</td>
+<td style="text-align:center">String</td>
+<td style="text-align:right">是</td>
+</tr>
+<tr>
+<td>funCode</td>
+<td style="text-align:center">功能点编号</td>
 <td style="text-align:center">String</td>
 <td style="text-align:right">是</td>
 </tr>
 </tbody>
 </table>
-<h3 id="返回参数"><a href="#返回参数" class="headerlink" title="返回参数"></a>返回参数</h3><table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th style="text-align:center">说明</th>
-<th style="text-align:right">类型</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DeviceID</td>
-<td style="text-align:center">设备编号</td>
-<td style="text-align:right">String</td>
-</tr>
-<tr>
-<td>DeviceName</td>
-<td style="text-align:center">设备名称</td>
-<td style="text-align:right">String</td>
-</tr>
-<tr>
-<td>DataCode</td>
-<td style="text-align:center">数据标识编号</td>
-<td style="text-align:right">String</td>
-</tr>
-<tr>
-<td>DataName</td>
-<td style="text-align:center">数据标识名称</td>
-<td style="text-align:right">String</td>
-</tr>
-</tbody>
-</table>
-<h3 id="成功返回JSON示例"><a href="#成功返回JSON示例" class="headerlink" title="成功返回JSON示例"></a>成功返回JSON示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;state&quot;：0,</div><div class="line">    &quot;ProjectCode&quot;:&quot;1&quot;,</div><div class="line">    &quot;data&quot;: [</div><div class="line">        &#123;</div><div class="line">            &quot;DeviceID&quot;: 1,</div><div class="line">            &quot;DeviceName&quot;: &quot;1#进线1&quot;,</div><div class="line">            &quot;DataCode&quot;: 44,</div><div class="line">            &quot;DataName&quot;: &quot;A相电压&quot;</div><div class="line">        &#125;,</div><div class="line">        &#123;</div><div class="line">            &quot;DeviceID&quot;: 1,</div><div class="line">            &quot;DeviceName&quot;: &quot;1#进线1&quot;,</div><div class="line">            &quot;DataCode&quot;: 46,</div><div class="line">            &quot;DataName&quot;: &quot;C相电压&quot;</div><div class="line">        &#125;</div><div class="line">    ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="失败返回JSON示例"><a href="#失败返回JSON示例" class="headerlink" title="失败返回JSON示例"></a>失败返回JSON示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;State&quot;: -1,</div><div class="line">    &quot;ErrorMessage&quot;: &quot;此处显示失败信息&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>ps: <strong>若为集团功能点，可以使用属于该集团下的任何一个项目的编号( projectcode )发起请求</strong></p>
+<h3 id="成功返回示例"><a href="#成功返回示例" class="headerlink" title="成功返回示例"></a>成功返回示例</h3><p>以访问某集团综合态势页面为例，成功返回页面如下图所示:<br><img src="http://osv2a938x.bkt.clouddn.com/pc_h5_case.png" alt=""></p>
+<h3 id="失败返回示例"><a href="#失败返回示例" class="headerlink" title="失败返回示例"></a>失败返回示例</h3><p>若 <strong>accesstoken</strong> 不正确或者 <strong>projectcode</strong> 或者  <strong>funCode</strong> 不存在，则会返回空白页提示:<br><strong>没有该页面访问权限。</strong></p>
 
     </div>
   </div>
   <div class='switch-page'>
     
-      <a class='previous' href='/efos-api-doc/project_navparams.html'>上一节</a>
+      <a class='previous' href='/efos-api-doc/efos_app_h5_page.html'>上一节</a>
     
 
     <a class='footer' href='http://www.eegrid.com'>
       深圳市能效通网络有限公司
     </a>
 
-    
-      <a class='next' href='/efos-api-doc/project_alarmconfig.html'>下一节</a>
     
   </div>
 </body>
