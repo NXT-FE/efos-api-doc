@@ -26,8 +26,8 @@ next: energy_dev_hourdata.html
 | 参数名称        | 说明           | 类型  |
 | ------------- |:-------------:| -----:|
 | DeviceID      | 设备编号 | String |
-| CollectTime      | 采集时间      | String |
-| CollectData      | 参数值 | String（单位:kwh） |
+| CollectTime   | 采集时间      | String |
+| CollectData   | 参数值 | String（单位:kwh） |
 
 > 注：请求不可跨天( StartTime \ EndTime 必须为同一天 )，每日请求数据次数限制为 5 次
 
