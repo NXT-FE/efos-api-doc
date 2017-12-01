@@ -18,6 +18,8 @@ next: project_auth.html
 * 增加告警配置接口 **Expression** 示例
 * 告警条件配置接口增加告警级别字段 **AlarmLevel**
 * 项目下所有设备接口增加客户设备标准编码字段 **DeviceCode**
+* 项目下所有设备接口增加是否显示字段 **IsDisplay**
+
 
 ### 1.5.3
 * 新增 **项目下所有告警类型** 接口
