@@ -8,6 +8,8 @@
     title: 项目权限
   - id: project_alarmtype
     title: 项目下所有告警类型
+  - id: project_device_system
+    title: 设备系统信息
   - id: project_devicetype
     title: 项目下所有设备类型
   - id: project_device
