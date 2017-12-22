@@ -6,7 +6,7 @@ next: project_auth.html
 ---
 
 **当前版本:1.5.4** 
-各集团用户请联系**商务人员**获取 **APPID** 与 **APPSecret**
+各集团用户请联系**商务人员**获取 **AppKey** 与 **AppSecret**
 
 ## 修正项
 ### 1.5.4

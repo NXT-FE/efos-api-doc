@@ -2,6 +2,14 @@
   items:
   - id: intro
     title: 简介
+- title: 验证与请求规则
+  items:
+  - id: init_accesstoken
+    title: 权限验证方法1
+  - id: init_accesstoken_h
+    title: 权限验证方法2
+  - id: init_frequency
+    title: 访问频率次数说明
 - title: 初始化接口
   items:
   - id: project_auth
