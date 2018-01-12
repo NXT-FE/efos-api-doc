@@ -28,8 +28,9 @@ next: state_alldev_realdata.html
 | DeviceName    | 设备名称      | String |
 | DataCode      | 数据标识编号     | String |
 | DataName      | 数据标识名称      | String |
-| Expression      | 表达式      | String |
-| AlarmLevel      | 告警级别(共3个级别，1:事件;2:一般告警;3:严重告警)   | String |
+| Expression    | 表达式      | String |
+| AlarmLevel    | 告警级别(共3个级别，1:事件;2:一般告警;3:严重告警)   | String |
+| AlarmTypeID   | 告警类型编号(详情请参考:项目下所有告警类型)   | String |
 
 
 #### Expression 高级示例
@@ -51,7 +52,8 @@ next: state_alldev_realdata.html
             "DataCode": 1,
             "DataName": "运行状态",
             "Expression": "1_1==0",  
-            "AlarmLevel": "1"
+            "AlarmLevel": "1",
+            "AlarmTypeID": "1"
         },
         {
             "DeviceID": 1,
@@ -59,7 +61,8 @@ next: state_alldev_realdata.html
             "DataCode": 46,
             "DataName": "C相电压",
             "Expression": "1_46>418",
-            "AlarmLevel": "2"
+            "AlarmLevel": "2",
+            "AlarmTypeID": "1"
         },
         {
             "DeviceID": 43,
@@ -67,7 +70,8 @@ next: state_alldev_realdata.html
             "DataCode": 1,
             "DataName": "运行状态",
             "Expression": "43_1==0||43_2==1",
-            "AlarmLevel": "3"
+            "AlarmLevel": "3",
+            "AlarmTypeID": "2"
         },
     ]
 }
