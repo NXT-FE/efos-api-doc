@@ -17,6 +17,7 @@ next: project_alarmtype.html
 | ------------- |:-------------:| -----:|
 | ProjectCode      | 项目编号 | String |
 | ProjectName      | 项目名称      | String |
+| Area      | 项目面积（单位: ㎡）      | String |
 
 
 
@@ -27,11 +28,13 @@ next: project_alarmtype.html
     "Data": [
         {
             "ProjectCode":"1",
-            "ProjectName":"项目1"
+            "ProjectName":"项目1",
+            "Area":"71450"
         },
         {
             "ProjectCode":"2",
-            "ProjectName":"项目2"
+            "ProjectName":"项目2",
+            "Area":"82441"
         }
     ]
 }
