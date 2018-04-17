@@ -26,7 +26,7 @@ next: project_device_system.html
 | ------------- |:-------------:| -----:|
 | TypeID      | 告警类型编号 | String |
 | AlarmTypeName      | 告警类型名称      | String |
-| AlarmTypeLevel      | 告警类型级别[1:事件，2:一般警，3:严重告警]      | String |
+| AlarmTypeLevel      | 告警类型级别[1:事件，2:一般告警，3:严重告警]      | String |
 
 
 ### 成功返回JSON示例

@@ -30,7 +30,7 @@ next: other_returncode.html
 | DataCode        | 参数编号 | String |
 | CollectData      | 参数值 | String |
 | AlarmID      | 告警编号 | String |
-| AlarmLevel      | 报警等级（一般告警、重要告警），暂不不提供事件信息。      | String |
+| AlarmLevel      | 报警等级（[1:事件，2:一般告警，3:严重告警]），暂不不提供事件信息。      | String |
 | AlarmType      | 报警类型（如：过温） | String |
 | Alarmtime      | 报警时间      | String |
 | AlarmInfo        | 报警信息 | String |
@@ -42,14 +42,14 @@ next: other_returncode.html
     "ProjectCode":"1",
     "Data":[
         {
-            "DeviceID":"1",
-            "DataCode":"1",
-            "CollectData":" 70",
-            "AlarmID":"23",
+            "DeviceID":"61",
+            "DataCode":"1010",
+            "CollectData":"0.31",
+            "AlarmID":"32341",
             "AlarmLevel":"一般告警",
-            "AlarmType":" 过温告警",
-            "AlarmTime":"2016-01-12 09:00",
-            "AlarmInfo":"变压器温度过高"
+            "AlarmType":"压力低压告警",
+            "AlarmTime":" 2016-01-12 09:00",
+            "AlarmInfo":"消防泵房_喷淋泵压力表-压力低压告警当前值:0.31 Mpa"
         },
         {
             "DeviceID": "73",
@@ -57,9 +57,9 @@ next: other_returncode.html
             "CollectData": "2099",
             "AlarmID":"23",
             "AlarmLevel":" 严重告警",
-            "AlarmType":" 过流告警",
+            "AlarmType":" 故障告警",
             "AlarmTime":"2016-01-12 09:20",
-            "AlarmInfo":" 过流告警,当前值: 2099"
+            "AlarmInfo":" 1层风机_AHU-WG-1 (25)-故障告警当前值:1.0"
         },
     …
     ]
