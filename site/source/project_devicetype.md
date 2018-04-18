@@ -33,9 +33,9 @@ next: project_device.html
 ### 成功返回JSON示例
 ```
 {
-    "state"：0,
+    "State"：0,
     "ProjectCode":1,
-    "data": [
+    "Data": [
         {
             "DeviceTypeID":1,
             "ParentCode":null,

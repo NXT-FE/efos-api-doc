@@ -32,9 +32,9 @@ next: project_device_system.html
 ### 成功返回JSON示例
 ```
 {
-    "state"：0,
+    "State"：0,
     "ProjectCode":"1",
-    "data": [
+    "Data": [
         {
             "TypeID":"1",
             "AlarmTypeName":"故障告警"

@@ -34,16 +34,16 @@ next: energy_dev_hourdata.html
 ### 成功返回JSON示例
 ```
 {
-    "state":"0",
-    "projectCode":"1",
-    "data":[
+    "State":"0",
+    "ProjectCode":"1",
+    "Data":[
         {
-            "deviceID":"1",
+            "DeviceID":"1",
             "CollectTime":"2016-01-29 23:00",
             "CollectData":" "321",
         },
         {
-            "deviceID":"2",
+            "DeviceID":"2",
             "CollectTime":"2016-01-29 23:00",
             "CollectData":" "322",
         },

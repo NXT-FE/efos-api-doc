@@ -35,9 +35,9 @@ next: alarm_dataspan_data.html
 ### 成功返回JSON示例
 ```
 {
-    "state":"0",
-    "projectCode":"1",
-    "data":[
+    "State":"0",
+    "ProjectCode":"1",
+    "Data":[
         {
             "deviceID":"1",
             "CollectTime":"2016-01-29 00:00",
