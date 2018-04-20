@@ -33,9 +33,9 @@ next: project_device_datacode.html
 ### 成功返回JSON示例
 ```
 {
-    "State"：0,
+    "state"：0,
     "ProjectCode":1,
-    "Data": [
+    "data": [
         {
             "NavCode":1,
             "NavName":"变压器房（主楼-2f）",
@@ -59,7 +59,7 @@ next: project_device_datacode.html
 ### 失败返回JSON示例 
 ```
 {
-    "State": -1,
-    "ErrorMessage": "此处显示失败信息"
+    "state": -1,
+    "errorMessage": "此处显示失败信息"
 }
 ```

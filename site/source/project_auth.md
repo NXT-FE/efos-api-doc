@@ -24,8 +24,8 @@ next: project_alarmtype.html
 ### 成功返回JSON示例
 ```
 {
-    "State"：0,
-    "Data": [
+    "state"：0,
+    "data": [
         {
             "ProjectCode":"1",
             "ProjectName":"项目1",
@@ -44,7 +44,7 @@ next: project_alarmtype.html
 ### 失败返回JSON示例 
 ```
 {
-    "State": -1,
-    "ErrorMessage": "此处显示失败信息"
+    "state": -1,
+    "errorMessage": "此处显示失败信息"
 }
 ```

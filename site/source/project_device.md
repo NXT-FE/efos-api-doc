@@ -36,9 +36,9 @@ next: project_deviceparams.html
 ### 成功返回JSON示例
 ```
 {
-    "State"：0,
+    "state"：0,
     "ProjectCode":1,
-    "Data": [
+    "data": [
         {
             "TypeID":1,
             "TypeName":"变压器"
@@ -66,8 +66,8 @@ next: project_deviceparams.html
 ### 失败返回JSON示例 
 ```
 {
-    "State": -1,
-    "ErrorMessage": "此处显示失败信息"
+    "state": -1,
+    "errorMessage": "此处显示失败信息"
 }
 ```
 

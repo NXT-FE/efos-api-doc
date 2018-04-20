@@ -34,9 +34,9 @@ next: state_alldev_historydata.html
 ### 成功返回JSON示例
 ```
 {
-    "State"：0,
+    "state"：0,
     "ProjectCode":"1",
-    "Data":[{
+    "data":[{
             "DeviceID":1,
             "DataCode":"1",
             "CollectTime":" 2016-03-01 05:00",
@@ -59,7 +59,7 @@ next: state_alldev_historydata.html
 ### 失败返回JSON示例 
 ```
 {
-    "State": -1,
-    "ErrorMessage": "此处显示失败信息"
+    "state": -1,
+    "errorMessage": "此处显示失败信息"
 }
 ```

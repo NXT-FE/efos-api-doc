@@ -32,9 +32,9 @@ next: project_device_system.html
 ### 成功返回JSON示例
 ```
 {
-    "State"：0,
+    "state"：0,
     "ProjectCode":"1",
-    "Data": [
+    "data": [
         {
             "TypeID":"1",
             "AlarmTypeName":"故障告警"
@@ -54,8 +54,8 @@ next: project_device_system.html
 ### 失败返回JSON示例 
 ```
 {
-    "State": -1,
-    "ErrorMessage": "此处显示失败信息"
+    "state": -1,
+    "errorMessage": "此处显示失败信息"
 }
 ```
 

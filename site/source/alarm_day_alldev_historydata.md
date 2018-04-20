@@ -47,9 +47,9 @@ next: other_returncode.html
 
 ```
 {
-    "State":"0",
+    "state":"0",
     "ProjectCode":"1",
-    "Data":[
+    "data":[
         {
             "DeviceID":"61",
             "DataCode":"1010",
@@ -85,7 +85,7 @@ next: other_returncode.html
 
 ```
 {
-    "State": -1,
-    "ErrorMessage": "此处显示失败信息"
+    "state": -1,
+    "errorMessage": "此处显示失败信息"
 }
 ```

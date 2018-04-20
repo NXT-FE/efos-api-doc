@@ -32,9 +32,9 @@ next: project_alarmconfig.html
 ### 成功返回JSON示例
 ```
 {
-    "State"：0,
+    "state"：0,
     "ProjectCode":"1",
-    "Data": [
+    "data": [
         {
             "DeviceID": 1,
             "DeviceName": "1#进线1",
@@ -57,8 +57,8 @@ next: project_alarmconfig.html
 ### 失败返回JSON示例 
 ```
 {
-    "State": -1,
-    "ErrorMessage": "此处显示失败信息"
+    "state": -1,
+    "errorMessage": "此处显示失败信息"
 }
 ```
 
