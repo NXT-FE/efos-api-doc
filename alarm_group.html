@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charSet='utf-8' />
-  <title>EFOS-API DOC - 某日某项目某设备所有历史告警</title>
+  <title>EFOS-API DOC - 某集团所有实时告警</title>
   <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
   <link href='/efos-api-doc/css/docs.css' rel='stylesheet'>
@@ -123,7 +123,7 @@
               </li>
             
               <li>
-                <a href='/efos-api-doc/alarm_day_historydata.html' class='active'>某日某项目某设备所有历史告警</a>
+                <a href='/efos-api-doc/alarm_day_historydata.html'>某日某项目某设备所有历史告警</a>
               </li>
             
               <li>
@@ -131,7 +131,7 @@
               </li>
             
               <li>
-                <a href='/efos-api-doc/alarm_group.html'>某集团所有实时告警</a>
+                <a href='/efos-api-doc/alarm_group.html' class='active'>某集团所有实时告警</a>
               </li>
             
           </ul>
@@ -165,7 +165,7 @@
   </div>
   <div class='page'>
     <div class='page-content'>
-      <h1>某日某项目某设备所有历史告警</h1>
+      <h1>某集团所有实时告警</h1>
       <h3 id="请求"><a href="#请求" class="headerlink" title="请求"></a>请求</h3><h4 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h4><blockquote>
 <p><a href="http://webapi.eegrid.com/alarm/get?AccessToken=ACCESSTOKEN" target="_blank" rel="noopener">http://webapi.eegrid.com/alarm/get?AccessToken=ACCESSTOKEN</a></p>
 </blockquote>
@@ -175,36 +175,7 @@
 <h4 id="Content-Type"><a href="#Content-Type" class="headerlink" title="Content-Type"></a>Content-Type</h4><blockquote>
 <p>application/x-www-form-urlencoded</p>
 </blockquote>
-<h3 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h3><table>
-<thead>
-<tr>
-<th>参数名称</th>
-<th style="text-align:center">说明</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:right">是否必须</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ProjectCode</td>
-<td style="text-align:center">项目编号</td>
-<td style="text-align:center">String</td>
-<td style="text-align:right">是</td>
-</tr>
-<tr>
-<td>DeviceID</td>
-<td style="text-align:center">设备编号</td>
-<td style="text-align:center">String</td>
-<td style="text-align:right">是</td>
-</tr>
-<tr>
-<td>Date</td>
-<td style="text-align:center">时刻，如(2016-1-12 10:00)</td>
-<td style="text-align:center">String</td>
-<td style="text-align:right">否，默认当天</td>
-</tr>
-</tbody>
-</table>
+<h3 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h3><p>无</p>
 <h3 id="返回参数"><a href="#返回参数" class="headerlink" title="返回参数"></a>返回参数</h3><table>
 <thead>
 <tr>
@@ -214,6 +185,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>ProjectCode</td>
+<td style="text-align:center">项目编号</td>
+<td style="text-align:right">String</td>
+</tr>
+<tr>
+<td>ProjectName</td>
+<td style="text-align:center">项目名称</td>
+<td style="text-align:right">String</td>
+</tr>
 <tr>
 <td>DeviceID</td>
 <td style="text-align:center">设备编号</td>
@@ -271,14 +252,14 @@
 </tr>
 </tbody>
 </table>
-<h3 id="成功返回-JSON-示例"><a href="#成功返回-JSON-示例" class="headerlink" title="成功返回 JSON 示例"></a>成功返回 JSON 示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;state&quot;:&quot;0&quot;,</span><br><span class="line">    &quot;ProjectCode&quot;:&quot;1&quot;,</span><br><span class="line">    &quot;data&quot;:[</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;DeviceID&quot;:&quot;61&quot;,</span><br><span class="line">            &quot;DataCode&quot;:&quot;1010&quot;,</span><br><span class="line">            &quot;CollectData&quot;:&quot;0.31&quot;,</span><br><span class="line">            &quot;AlarmID&quot;:&quot;32341&quot;,</span><br><span class="line">            &quot;AlarmLevel&quot;:&quot;一般告警&quot;,</span><br><span class="line">            &quot;AlarmType&quot;:&quot;压力低压告警&quot;,</span><br><span class="line">            &quot;AlarmTime&quot;:&quot; 2016-01-12 09:00&quot;,</span><br><span class="line">            &quot;AlarmInfo&quot;:&quot;消防泵房_喷淋泵压力表-压力低压告警当前值:0.31 Mpa&quot;,</span><br><span class="line">            &quot;NavName&quot;:&quot;消防泵房&quot;,</span><br><span class="line">            &quot;DeviceName&quot;:&quot;喷淋泵压力表&quot;,</span><br><span class="line">            &quot;AlarmDetail&quot;:&quot;压力低压告警当前值:0.31 Mpa&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;DeviceID&quot;: &quot;1&quot;,</span><br><span class="line">            &quot;DataCode&quot;: &quot;41&quot;,</span><br><span class="line">            &quot;CollectData&quot;: &quot;1.0&quot;,</span><br><span class="line">            &quot;AlarmID&quot;:&quot;21131&quot;,</span><br><span class="line">            &quot;AlarmLevel&quot;:&quot; 严重告警&quot;,</span><br><span class="line">            &quot;AlarmType&quot;:&quot; 故障告警&quot;,</span><br><span class="line">            &quot;AlarmTime&quot;:&quot;2016-01-12 09:20&quot;,</span><br><span class="line">            &quot;AlarmInfo&quot;:&quot; 1层风机_AHU-WG-1 (25)-故障告警当前值:1.0&quot;,</span><br><span class="line">            &quot;NavName&quot;:&quot;1层风机&quot;,</span><br><span class="line">            &quot;DeviceName&quot;:&quot;AHU-WG-1 (25)&quot;,</span><br><span class="line">            &quot;AlarmDetail&quot;:&quot;故障告警当前值:1.0&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">    …</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="成功返回-JSON-示例"><a href="#成功返回-JSON-示例" class="headerlink" title="成功返回 JSON 示例"></a>成功返回 JSON 示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;state&quot;:&quot;0&quot;,</span><br><span class="line">    &quot;data&quot;:[</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;ProjectCode&quot;: 1,</span><br><span class="line">            &quot;ProjectName&quot;: &quot;测试项目1&quot;,</span><br><span class="line">            &quot;DeviceID&quot;:&quot;61&quot;,</span><br><span class="line">            &quot;DataCode&quot;:&quot;1010&quot;,</span><br><span class="line">            &quot;CollectData&quot;:&quot;0.31&quot;,</span><br><span class="line">            &quot;AlarmID&quot;:&quot;32341&quot;,</span><br><span class="line">            &quot;AlarmLevel&quot;:&quot;一般告警&quot;,</span><br><span class="line">            &quot;AlarmType&quot;:&quot;压力低压告警&quot;,</span><br><span class="line">            &quot;AlarmTime&quot;:&quot; 2016-01-12 09:00&quot;,</span><br><span class="line">            &quot;AlarmInfo&quot;:&quot;消防泵房_喷淋泵压力表-压力低压告警当前值:0.31 Mpa&quot;,</span><br><span class="line">            &quot;NavName&quot;:&quot;消防泵房&quot;,</span><br><span class="line">            &quot;DeviceName&quot;:&quot;喷淋泵压力表&quot;,</span><br><span class="line">            &quot;AlarmDetail&quot;:&quot;压力低压告警当前值:0.31 Mpa&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            &quot;ProjectCode&quot;: 2,</span><br><span class="line">            &quot;ProjectName&quot;: &quot;测试项目2&quot;,</span><br><span class="line">            &quot;DeviceID&quot;: &quot;1&quot;,</span><br><span class="line">            &quot;DataCode&quot;: &quot;41&quot;,</span><br><span class="line">            &quot;CollectData&quot;: &quot;1.0&quot;,</span><br><span class="line">            &quot;AlarmID&quot;:&quot;21131&quot;,</span><br><span class="line">            &quot;AlarmLevel&quot;:&quot; 严重告警&quot;,</span><br><span class="line">            &quot;AlarmType&quot;:&quot; 故障告警&quot;,</span><br><span class="line">            &quot;AlarmTime&quot;:&quot;2016-01-12 09:20&quot;,</span><br><span class="line">            &quot;AlarmInfo&quot;:&quot; 1层风机_AHU-WG-1 (25)-故障告警当前值:1.0&quot;,</span><br><span class="line">            &quot;NavName&quot;:&quot;1层风机&quot;,</span><br><span class="line">            &quot;DeviceName&quot;:&quot;AHU-WG-1 (25)&quot;,</span><br><span class="line">            &quot;AlarmDetail&quot;:&quot;故障告警当前值:1.0&quot;</span><br><span class="line">        &#125;,</span><br><span class="line">    …</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="失败返回-JSON-示例"><a href="#失败返回-JSON-示例" class="headerlink" title="失败返回 JSON 示例"></a>失败返回 JSON 示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;state&quot;: -1,</span><br><span class="line">    &quot;errorMessage&quot;: &quot;此处显示失败信息&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
     </div>
   </div>
   <div class='switch-page'>
     
-      <a class='previous' href='/efos-api-doc/alarm_dataspan_data.html'>上一节</a>
+      <a class='previous' href='/efos-api-doc/alarm_day_alldev_historydata.html'>上一节</a>
     
 
     <a class='footer' href='http://www.eegrid.com'>
@@ -286,7 +267,7 @@
     </a>
 
     
-      <a class='next' href='/efos-api-doc/alarm_day_alldev_historydata.html'>下一节</a>
+      <a class='next' href='/efos-api-doc/other_returncode.html'>下一节</a>
     
   </div>
 </body>
