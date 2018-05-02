@@ -10,7 +10,7 @@ next: other_returncode.html
 
 #### 地址
 
-> http://webapi.eegrid.com/alarm/get?AccessToken=ACCESSTOKEN
+> http://webapi.eegrid.com/alarm/bloc/get?AccessToken=ACCESSTOKEN
 
 #### 请求方法
 
