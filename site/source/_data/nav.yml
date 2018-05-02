@@ -50,7 +50,8 @@
     title: 某日某项目某设备所有历史告警
   - id: alarm_day_alldev_historydata
     title: 某日某项目所有历史告警
-
+  - id: alarm_group
+    title: 某集团所有实时告警
 - title: 其它 
   items:
   - id: other_returncode
