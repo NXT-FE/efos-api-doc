@@ -29,7 +29,7 @@ next: energy_dev_hourdata.html
 | CollectTime      | 采集时间      | String |
 | CollectData      | 参数值 | String（单位:kwh） |
 
-> 注：请求不可跨天( StartTime \ EndTime 必须为同一天 )，每日请求数据次数限制为 5 次
+> 注：请求不可跨天( StartTime \ EndTime 必须为同一天 )
 
 ### 成功返回JSON示例
 ```
