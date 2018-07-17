@@ -36,7 +36,7 @@
     title: 某项目某日某设备逐时数据
   - id: state_alldev_datespan_historydata
     title: 某项目某时间段所有设备历史数据
-- title: 能耗数据(暂未开放)
+- title: 能耗数据
   items:
   - id: energy_alldev_daydata
     title: 某项目所有设备某日能耗
